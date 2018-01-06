@@ -1,0 +1,22 @@
+.cnode-body {
+  position: fixed;
+  top: 1rem;
+  height: 100%;
+  overflow-y: scroll;
+}
+.cnode-body_ul li {
+  display: flex;
+}
+.conde-body_header {
+  display: flex;
+}
+.body-header_img {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.body-header_img img {
+  width: 100%;
+  height: 100%;
+}

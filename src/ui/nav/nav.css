@@ -1,0 +1,10 @@
+.conde-nav_ul {
+  display: flex;
+  background-color: #fff; 
+}
+.conde-nav_ul li{
+  flex-grow: 1;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  text-align: center;
+}

@@ -28,6 +28,7 @@ class App extends Component {
         name: "招聘"
       }
     ],
+    nextText: '加载更多...',
     listQuery: {
       page: 1,
       limit: 20,
@@ -60,13 +61,18 @@ class App extends Component {
     })
   }
   render() {
-    let { loading } = this.state
+    let { list, loading, nextText } = this.state
     return (
       <div className="App">
         <Top></Top>
-        <Nav data={this.state.data} navClick={this.navClick.bind(this)}></Nav>
+        <Nav
+          data={this.state.data}
+          navClick={this.navClick.bind(this)}>
+        </Nav>
         {
-          loading === true ? <Center list={this.state.list}></Center> : <Loadin></Loadin>
+          loading === true ?
+            <Center list={list} nextText={nextText}></Center>
+            : <Loadin></Loadin>
         }
       </div>
     );
